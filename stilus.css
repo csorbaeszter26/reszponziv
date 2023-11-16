@@ -1,0 +1,140 @@
+* { 
+    margin:0;
+    padding:3px; 
+    box-sizing: border-box;
+}
+
+
+
+body {
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+    
+   
+}
+
+article img {
+    width: 100%;
+    text-align:center;
+}
+
+
+
+nav ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    list-style-type: none;
+    text-align: left;
+    gap: 0px;
+}
+
+nav a {
+    text-decoration: none;
+    color: red;
+    padding: 5px;
+
+}
+
+nav a:hover{
+    background-color: red;
+    color: white;
+
+}
+
+nav li {
+    background-color: grey;
+    padding: 5px;
+    border: 1px solid black;
+}
+
+body, header, nav, article, footer, section, img { 
+    border: 1px solid black;
+    padding: 5px;
+    margin: 5px;
+    
+}
+
+h1 {
+    margin: 20px;
+}
+
+img {
+    width: 100%;
+    
+}
+
+main {
+    display: grid;
+    grid-template-areas: 
+        "h"
+        "n"
+        "a"
+        "f"; 
+}
+
+header {
+    grid-area: h;
+}
+
+article {
+    grid-area: a;
+}
+
+nav {
+    grid-area: n;
+}
+
+footer {
+    grid-area: f;
+}
+
+
+.tobbkep {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    
+}
+
+
+.tobbkep div {
+    
+    padding: 1px;
+    margin:1px;
+}
+
+
+@media only screen and (max-width: 400px) {
+    body, main {
+        
+        width:100%;
+    }
+    main {
+        font-size: 20px;
+        grid-template-columns:1fr; 
+        grid-template-areas: 
+            "h"
+            "n"
+            "a"
+            "f"; 
+    }
+
+    nav ul {
+    
+        grid-template-columns: 1fr; 
+        gap: 5px; 
+        list-style-type: none;
+        text-align: center;
+        width: 100%;
+    }
+    .tobbkep {
+        display: grid;
+        grid-template-columns: 1fr; 
+        gap: 5px; 
+        text-align: center;
+        width: fit-content;
+        
+    }
+
+    
+}
